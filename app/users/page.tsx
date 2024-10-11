@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 };
 
 export default async function UsersPage() {
-  const { users, total_pages } = await getUsers();
-
   try {
+    const { users, total_pages } = await getUsers();
+
     return (
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">Users</h1>
-        <UserList initialUsers={users} totalPages={total_pages} />
+        <UserList initialUsers={users} initialTotalPages={total_pages} />
       </div>
     );
   } catch (error) {
