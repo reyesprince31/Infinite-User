@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { UserCard } from "./user-card";
 import { Button } from "@/components/ui/button";
-import { User } from "@/app/types/user";
+import { User } from "@/lib/types/user";
 
 interface UserListProps {
   initialUsers: User[];
