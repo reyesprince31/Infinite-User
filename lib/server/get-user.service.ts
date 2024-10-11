@@ -1,6 +1,6 @@
 import { User } from '../types/user';
 
-const API_BASE_URL = process.env.API_BASE_URL;
+const API_BASE_URL = "https://reqres.in/api";
 
 export async function getUsers(page: number = 1): Promise<{ users: User[], total_pages: number }> {
 
