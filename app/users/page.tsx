@@ -3,7 +3,7 @@ import { UserList } from "./_components/user-list";
 import { getUsers } from "@/lib/server/get-user.service";
 
 export const metadata: Metadata = {
-  title: "User List | My App",
+  title: "User List | Infiniti",
   description: "View a list of users from our application",
 };
 

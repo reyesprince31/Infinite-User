@@ -10,12 +10,14 @@ export default function Navigation() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="text-2xl font-bold">Infiniti</div>
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-4 items-center text-lg">
             <li>
               <Link
                 href="/"
                 className={`${
-                  pathname === "/" ? "text-blue-500" : "hover:text-gray-300"
+                  pathname === "/"
+                    ? "text-blue-500 font-bold underline underline-offset-8 decoration-2 decoration-blue-500"
+                    : "hover:text-gray-300"
                 }`}>
                 Home
               </Link>
@@ -25,7 +27,7 @@ export default function Navigation() {
                 href="/users"
                 className={`${
                   pathname === "/users"
-                    ? "text-blue-500"
+                    ? "text-blue-500 font-bold underline underline-offset-8 decoration-2 decoration-blue-500"
                     : "hover:text-gray-300"
                 }`}>
                 Users
